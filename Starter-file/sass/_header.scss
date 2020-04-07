@@ -1,0 +1,116 @@
+.header {
+  
+    &__hero
+    {
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: url("/Starter-file/dist/img/Merged_bar-5.png");
+      background-color: $color_ciel;
+      color: $color-black;
+      height: 2em;
+      padding: 2em;
+    }
+  
+    // background-color:burlywood ;
+   
+  
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  
+  }
+  
+  .nav > li {
+    margin: 0 1rem;
+  }
+    .nav-links{
+      margin-left: 40px;
+        color: $color-black;
+      text-decoration: none;
+     
+    }
+    .active
+    {
+      color: $color-blue;
+      font-weight: bold;
+    }
+      
+    
+    .nav-links:hover {
+    font-weight: bold;
+      color: $color-blue;
+    }
+  
+    &__infos
+  {
+      padding: 2%;
+      background-color:$color_yellow ;
+      .titre
+      {
+          @include titre;
+          font-size: 25px;
+          padding-bottom: 1%;
+      }
+      p
+         {
+             text-align: center;
+             margin-bottom: 0em;
+         }
+  
+      
+  }
+  
+  .pensez
+  {
+      display: flex;
+      padding: 3%;
+      &__infor
+      {
+          .titre
+          {
+              text-align: center;
+              font-weight: bold;
+              color:$color_titre;
+              font-size: 20px;
+              margin-bottom: 2em;
+             
+          }
+          img
+          {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          .que
+          {
+              text-align: center;
+              margin-bottom: 0em;
+              font-weight: bold;
+              color:$color_texte ;
+              font-size: 20px;
+          }
+          button
+          {
+              @include button;
+              width: 650px;
+              
+          }
+          
+      }
+      &__image
+      {
+          img
+          {
+              width: 100%;
+              height: auto;
+          }
+      }
+  
+  
+    }
+  }
